@@ -24,7 +24,7 @@ public class MyAppUtils {
 	public void sendMail(String to , int otp) {
 		SimpleMailMessage mailMessage = new SimpleMailMessage();
 		mailMessage.setTo(to);
-		mailMessage.setFrom("pradnyashippure362@gmail.com");
+		mailMessage.setFrom("youremailid@gmail.com");
 		mailMessage.setSubject("OTP for your MyApp reset password");
 		mailMessage.setText("your otp is" + otp);
 		mailSender.send(mailMessage);
